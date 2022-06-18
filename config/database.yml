@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: 0000
+  host: localhost
+  port: 5433
+
+development:
+  <<: *default
+  database: story_dev
+
+test:
+  <<: *default
+  database: story_test
+
+production:
+  <<: *default
+  database: story
