@@ -8,8 +8,6 @@ Bundler.require(*Rails.groups)
 
 module CvMaker
   class Application < Rails::Application
-    ENV['DISABLE_DATABASE_ENVIRONMENT_CHECK'] = 1
-
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
     config.autoload_paths << "#{Rails.root}/lib"
